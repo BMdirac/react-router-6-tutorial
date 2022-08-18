@@ -1,4 +1,4 @@
-// *********************************** LEARNING PHASE 7b ************************
+// *********************************** FINAL LEARNING PHASE  ************************
 
 const Home = () => {
   return (
@@ -9,6 +9,44 @@ const Home = () => {
 }
 
 export default Home;
+
+
+// *********************************** LEARNING PHASE 8b ************************
+
+// const Home = () => {
+//   return (
+//       <section className='section'>
+//        <h2>Home Page</h2>
+//       </section>
+//   );
+// }
+
+// export default Home;
+
+
+// *********************************** LEARNING PHASE 8a ************************
+
+// const Home = () => {
+//   return (
+//       <section className='section'>
+//        <h2>Home Page</h2>
+//       </section>
+//   );
+// }
+
+// export default Home;
+
+// *********************************** LEARNING PHASE 7b ************************
+
+// const Home = () => {
+//   return (
+//       <section className='section'>
+//        <h2>Home Page</h2>
+//       </section>
+//   );
+// }
+
+// export default Home;
 
 // *********************************** LEARNING PHASE 7a ************************
 

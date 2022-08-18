@@ -1,4 +1,4 @@
-// *********************************** LEARNING PHASE 7b ************************
+// *********************************** FINAL LEARNING PHASE  ************************
 
 import React from 'react'
 
@@ -11,6 +11,51 @@ const Dashboard = ({ user }) => {
 }
 
 export default Dashboard;
+
+
+// *********************************** LEARNING PHASE 8b ************************
+
+// import React from 'react'
+
+// const Dashboard = ({ user }) => {
+//   return (
+//     <section className='section'>
+//          <h4>Hello, {user?.name} </h4>
+//     </section>
+//   );
+// }
+
+// export default Dashboard;
+
+
+// *********************************** LEARNING PHASE 8a ************************
+
+// import React from 'react'
+
+// const Dashboard = ({ user }) => {
+//   return (
+//     <section className='section'>
+//          <h4>Hello, {user?.name} </h4>
+//     </section>
+//   );
+// }
+
+// export default Dashboard;
+
+
+// *********************************** LEARNING PHASE 7b ************************
+
+// import React from 'react'
+
+// const Dashboard = ({ user }) => {
+//   return (
+//     <section className='section'>
+//          <h4>Hello, {user?.name} </h4>
+//     </section>
+//   );
+// }
+
+// export default Dashboard;
 
 // *********************************** LEARNING PHASE 7a ************************
 

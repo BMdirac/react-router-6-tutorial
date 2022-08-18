@@ -1,5 +1,12 @@
-// (LEARNING PHASE 7b: Use OF useNavigate in the Login component and the use of props from App.js to the Login.js and Dashboard.js)
-// *********************************** LEARNING PHASE 7b ************************
+// (FINAL LEARNING PHASE)
+
+/* 
+setting up the product and the productId as a nested route.
+Basically we want to use the nested route approach. The functionality is the same 
+*/
+
+// (SharedProductLayout component is created)
+// *********************************** FINAL LEARNING PHASE  ************************
 
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,21 +18,31 @@ import SharedLayout from "./pages/SharedLayout";
 import SingleProduct from "./pages/SingleProduct";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
-
+import ProtectedRoute from "./pages/ProtectedRoute";
+import SharedProductLayout from "./pages/SharedProductLayout";
 
 function App() {
-  // state value
-  const [ user, setUser ] = useState(null);
+  // state value 
+  const [ user, setUser ] = useState(null); // useState([]) can also be used here
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<SharedLayout />} > {/* what you want to share across those pages */}
         <Route index element={<Home />} />  {/* index will directly match the SharedLayout path */}
         <Route path='about' element={<About />} />
-        <Route path='products' element={<Products />} />
-        <Route path='products/:productId' element={<SingleProduct />} /> {/* any of these can also be used ':productId' or 'products/stat/:productId' */}
+
+        <Route path='products' element={<SharedProductLayout />} >
+        <Route index element={<Products />} />
+        <Route path=':productId' element={<SingleProduct />} /> {/* any of these can also be used ':productId' or 'products/stat/:productId' */}
+        </Route>
+        
         <Route path='login' element={<Login setUser={setUser}/>} />
-        <Route path='dashboard' element={<Dashboard user={user}/>} />
+        <Route path='dashboard'
+               element={
+              <ProtectedRoute user={user}>
+                 <Dashboard user={user}/>
+              </ProtectedRoute>
+        } />
         <Route path='*' element={<Error />} />
         </Route>
       </Routes>
@@ -34,6 +51,132 @@ function App() {
 }
 
 export default App;
+
+
+// (LEARNING PHASE 8b: setting ProtectedRoute component functionality)
+// *********************************** LEARNING PHASE 8b ************************
+
+// import { useState } from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Error from "./pages/Error"; 
+// import Products from "./pages/Products";
+// import SharedLayout from "./pages/SharedLayout";
+// import SingleProduct from "./pages/SingleProduct";
+// import Dashboard from "./pages/Dashboard";
+// import Login from "./pages/Login";
+// import ProtectedRoute from "./pages/ProtectedRoute";
+
+// function App() {
+//   // state value 
+//   const [ user, setUser ] = useState(null); // useState([]) can also be used here
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path='/' element={<SharedLayout />} > {/* what you want to share across those pages */}
+//         <Route index element={<Home />} />  {/* index will directly match the SharedLayout path */}
+//         <Route path='about' element={<About />} />
+//         <Route path='products' element={<Products />} />
+//         <Route path='products/:productId' element={<SingleProduct />} /> {/* any of these can also be used ':productId' or 'products/stat/:productId' */}
+//         <Route path='login' element={<Login setUser={setUser}/>} />
+//         <Route path='dashboard'
+//                element={
+//               <ProtectedRoute user={user}>
+//                  <Dashboard user={user}/>
+//               </ProtectedRoute>
+//         } />
+//         <Route path='*' element={<Error />} />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+
+// (LEARNING PHASE 8: RESTRICTING ACCESS TO CERTAIN ROUTE)
+// (ProtectedRoute component is created)
+// *********************************** LEARNING PHASE 8a ************************
+
+// import { useState } from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Error from "./pages/Error"; 
+// import Products from "./pages/Products";
+// import SharedLayout from "./pages/SharedLayout";
+// import SingleProduct from "./pages/SingleProduct";
+// import Dashboard from "./pages/Dashboard";
+// import Login from "./pages/Login";
+// import ProtectedRoute from "./pages/ProtectedRoute";
+
+// function App() {
+//   // state value 
+//   const [ user, setUser ] = useState(null); // useState([]) can also be used here
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path='/' element={<SharedLayout />} > {/* what you want to share across those pages */}
+//         <Route index element={<Home />} />  {/* index will directly match the SharedLayout path */}
+//         <Route path='about' element={<About />} />
+//         <Route path='products' element={<Products />} />
+//         <Route path='products/:productId' element={<SingleProduct />} /> {/* any of these can also be used ':productId' or 'products/stat/:productId' */}
+//         <Route path='login' element={<Login setUser={setUser}/>} />
+//         <Route path='dashboard'
+//                element={
+//               <ProtectedRoute user={user}>
+//                  <Dashboard user={user}/>
+//               </ProtectedRoute>
+//         } />
+//         <Route path='*' element={<Error />} />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+
+// (LEARNING PHASE 7b: Use OF useNavigate in the Login component and the use of props from App.js to the Login.js and Dashboard.js)
+// (HERE PROGRAMMATIC NAVIGATION IS DONE WITH THE USE OF useNavigate)
+// *********************************** LEARNING PHASE 7b ************************
+
+// import { useState } from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Error from "./pages/Error"; 
+// import Products from "./pages/Products";
+// import SharedLayout from "./pages/SharedLayout";
+// import SingleProduct from "./pages/SingleProduct";
+// import Dashboard from "./pages/Dashboard";
+// import Login from "./pages/Login";
+
+
+// function App() {
+//   // state value
+//   const [ user, setUser ] = useState(null);
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path='/' element={<SharedLayout />} > {/* what you want to share across those pages */}
+//         <Route index element={<Home />} />  {/* index will directly match the SharedLayout path */}
+//         <Route path='about' element={<About />} />
+//         <Route path='products' element={<Products />} />
+//         <Route path='products/:productId' element={<SingleProduct />} /> {/* any of these can also be used ':productId' or 'products/stat/:productId' */}
+//         <Route path='login' element={<Login setUser={setUser}/>} />
+//         <Route path='dashboard' element={<Dashboard user={user}/>} />
+//         <Route path='*' element={<Error />} />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
 
 
 // (LEARNING PHASE 7: TO NAVIGATE AROUND OUR PROJECT PROGRAMMATICALLY)
