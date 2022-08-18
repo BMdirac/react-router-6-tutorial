@@ -1,3 +1,5 @@
+// *********************************** LEARNING PHASE 7b ************************
+
 import { Link, useParams } from 'react-router-dom';
 import products from '../data';
  
@@ -16,6 +18,27 @@ import products from '../data';
 };
 
 export default SingleProduct;
+
+// *********************************** LEARNING PHASE 7a ************************
+
+// import { Link, useParams } from 'react-router-dom';
+// import products from '../data';
+ 
+//  const SingleProduct = () => {
+//     const { productId } = useParams();
+//      // note that product in 'find' is as event parameter as such itself and every other product include in the find function can be replace with similar word or alphabet
+//     const product = products.find((product) => product.id === productId); 
+//     const { image, name } = product;
+//   return (
+//     <section className="section product">
+//         <img src={image} alt={name} />
+//         <h5>{name}</h5>
+//         <Link to='/products' className='btn'>back to products</Link>
+//     </section>
+//   );
+// };
+
+// export default SingleProduct;
 
 
 // *********************************** LEARNING PHASE 6b ************************
