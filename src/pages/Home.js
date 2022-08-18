@@ -1,3 +1,5 @@
+// *********************************** LEARNING PHASE 6a ************************
+
 const Home = () => {
   return (
       <section className='section'>
@@ -7,6 +9,31 @@ const Home = () => {
 }
 
 export default Home;
+
+
+// *********************************** LEARNING PHASE 5 ************************
+
+// const Home = () => {
+//   return (
+//       <section className='section'>
+//        <h2>Home Page</h2>
+//       </section>
+//   );
+// }
+
+// export default Home;
+
+// *********************************** LEARNING PHASE 4 ************************
+
+// const Home = () => {
+//   return (
+//       <section className='section'>
+//        <h2>Home Page</h2>
+//       </section>
+//   );
+// }
+
+// export default Home;
 
 // *********************************** LEARNING PHASE 3 ************************
 

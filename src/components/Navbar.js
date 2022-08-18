@@ -1,17 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// ALREADY USING SyledNavbar components
 
-const Navbar = () => {
-  return (
-    <nav className='navbar'>
-      <Link to='/' style={{marginRight: "20px", textDecoration: "none"}}>Home</Link>
-      <Link to='/about' style={{marginRight: "20px", textDecoration: "none"}}>About</Link>
-      <Link to='/products' style={{marginRight: "20px", textDecoration: "none"}}>Products</Link>
-    </nav>
-  )
-}
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 
-export default Navbar;
+// const Navbar = () => {
+//   return (
+//     <nav className='navbar'>
+//       <Link to='/'>Home</Link>
+//       <Link to='/about'>About</Link>
+//       <Link to='/products'>Products</Link>
+//     </nav>
+//   )
+// }
+
+// export default Navbar;
 
 // *********************************** LEARNING PHASE 3 ************************
 
@@ -21,9 +23,9 @@ export default Navbar;
 // const Navbar = () => {
 //   return (
 //     <nav className='navbar'>
-//       <Link to='/' style={{marginRight: "20px", textDecoration: "none"}}>Home</Link>
-//       <Link to='/about' style={{marginRight: "20px", textDecoration: "none"}}>About</Link>
-//       <Link to='/products' style={{marginRight: "20px", textDecoration: "none"}}>Products</Link>
+//       <Link to='/'>Home</Link>
+//       <Link to='/about'>About</Link>
+//       <Link to='/products'>Products</Link>
 //     </nav>
 //   )
 // }
@@ -38,9 +40,9 @@ export default Navbar;
 // const Navbar = () => {
 //   return (
 //     <nav className='navbar'>
-//       <Link to='/' style={{marginRight: "20px", textDecoration: "none"}}>Home</Link>
-//       <Link to='/about' style={{marginRight: "20px", textDecoration: "none"}}>About</Link>
-//       <Link to='/products' style={{marginRight: "20px", textDecoration: "none"}}>Products</Link>
+//       <Link to='/'>Home</Link>
+//       <Link to='/about'>About</Link>
+//       <Link to='/products'>Products</Link>
 //     </nav>
 //   )
 // }
