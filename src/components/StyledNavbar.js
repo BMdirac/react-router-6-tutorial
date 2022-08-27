@@ -108,7 +108,7 @@ export default StyledNavbar;
 // export default StyledNavbar;
 
 
-// *********************************** LEARNING PHASE 6b ************************
+// *********************************** LEARNING PHASE 6a ************************
 
 // import React from 'react';
 // import { NavLink } from 'react-router-dom';

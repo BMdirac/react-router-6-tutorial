@@ -249,7 +249,7 @@ export default App;
 
 // export default App;
 
-// (LEARNING PHASE 6: TO ITTERATE OVER THE PRODUCTS THAT ARE COMING FROM THE data.js component INTO THE Products.js component)
+// (LEARNING PHASE 6: TO ITTERATE OVER THE PRODUCTS THAT ARE COMING FROM THE data.js component and render them into Products.js component)
 // (NOTICE THAT THE data.js has small case initial)
 // *********************************** LEARNING PHASE 6a ************************
 
